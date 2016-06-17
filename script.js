@@ -4,7 +4,7 @@
 var container = document.getElementById('mynetwork');
 
 var options = {
-//        physics: false,
+       // physics: false,
 //        interaction: {
 //            dragNodes: false,
 //            dragView: false,
@@ -14,7 +14,14 @@ var options = {
     edges: {
         arrows: {
             middle: true
-        }
+        },
+        smooth: false
+    },
+    interaction: {
+        hideEdgesOnDrag: true
+    },
+    nodes: {
+        mass: 5
     }
 };
 
